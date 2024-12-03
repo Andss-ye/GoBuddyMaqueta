@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles3.css">
     <title>Registro Paseador de Perros</title>
 </head>
 <body>
-    <h2>Formulario de Registro - Paseador de Perros</h2>
+    <h1>Formulario de Registro - Paseador de Perros</h1>
     <form action="/submit" method="POST">
 
-        <!-- Información Personal -->
         <label for="name">Nombre completo:</label>
         <input type="text" id="name" name="name" required>
         <br><br>
@@ -38,14 +38,12 @@
         <input type="text" id="address" name="address" required>
         <br><br>
 
-        <!-- Experiencia y Disponibilidad -->
-        <label>¿Tienes experiencia previa como paseador de perros?</label><br>
-        <input type="radio" id="experience-yes" name="experience" value="yes" required>
-        <label for="experience-yes">Sí</label>
-        <br>
-        <input type="radio" id="experience-no" name="experience" value="no">
-        <label for="experience-no">No</label>
-        <br><br>
+        <label>¿Tienes experiencia previa como paseador de perros?</label>
+        <div class="radio-group-inline">
+            <label><input type="radio" id="experience-yes" name="experience" value="yes" required> Sí</label>
+            <label><input type="radio" id="experience-no" name="experience" value="no"> No</label>
+        </div>
+
 
         <label for="experience-details">Describe tu experiencia:</label>
         <textarea id="experience-details" name="experience-details" rows="4"></textarea>
@@ -61,7 +59,7 @@
         <input type="checkbox" name="availability" value="domingo"> Domingo<br>
         <br>
 
-        <!-- Servicios Ofrecidos -->
+
         <label for="dog-size">¿Qué tamaño de perros puedes pasear?</label>
         <select id="dog-size" name="dog-size" required>
             <option value="" disabled selected>Selecciona</option>
@@ -75,7 +73,6 @@
         <textarea id="services" name="services" rows="2" placeholder="Ejemplo: Alimentación, Baño, etc."></textarea>
         <br><br>
 
-        <!-- Confirmación -->
         <label>
             <input type="checkbox" name="terms" required> Acepto los términos y condiciones
         </label>
