@@ -4,117 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro - Mascota</title>
+    <link rel="stylesheet" href="/styles/styleMascotas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Formulario de Registro - Mascota</h1>
-    <form>
-        <label for="nombre">Nombre de la mascota:</label>
-        <input type="text" id="nombre" name="nombre">
+<body class="page">
+    <h1 class="page__titulo">Formulario de Registro - Mascota</h1>
+    <form class="form">
+
+        <img src="https://static.vecteezy.com/system/resources/previews/006/720/668/original/dog-face-logo-free-vector.jpg" alt="img perro" class="form__image">
+
+        <div class="form__grupo">
+            <label for="nombre" class="form__label">Nombre de la mascota:</label>
+            <input type="text" id="nombre" name="nombre" class="form__input">
+        </div>
+        
+        <br>
+
+        <div class="form__grupo">
+            <label for="raza" class="form__label">Raza de la mascota:</label>
+            <input type="text" id="raza" name="raza" class="form__input">
+        </div>
+        
+        <br>
+
+        <div class="form__grupo">
+            <label for="edad" class="form__label">Edad de la mascota:</label>
+            <input type="number" id="edad" name="edad" class="form__input">
+        </div>
+
+        <br>
+
+        <div class="form__grupo">
+            <label for="Alergico" class="form__label">Es Alergico a Algun Medicamento?</label>
+            <br>
+            <br>
+            <input type="radio" id="SiVacunas" name="Alergico" value="si" class="form__radio">
+            <label for="SiVacunas" class="form__label">Si</label>
+            <br>
+            <input type="radio" id="NoVacunas" name="Alergico" value="no" class="form__radio">
+            <label for="NoVacunas" class="form__label">No</label>
+        </div>
+
         <br>
         <br>
 
-        <!-- <label for="tipo">Tipo de mascota:</label>
-        <select id="tipo" name="tipo">
-            <option value="perro">Perro</option>
-            <option value="gato">Gato</option>
-            <option value="otro">Otro</option>
-        </select>
+        <div class="form__grupo">
+        <label for="sobreMedicamento" class="form__label">Cuentanos cual Medicamento:</label>
         <br>
-        <br> -->
+        <textarea id="sobreMedicamento" name="sobreMedicamento" rows="4" cols="30" class="form__textarea"></textarea>
+        </div>
 
-        <label for="raza">Raza de la mascota:</label>
-        <input type="text" id="raza" name="raza">
+        <br>
+        
+        <div class="form__grupo">
+        <label for="carnetVacunas" class="form__label">Tiene carnet de vacunas?</label>
         <br>
         <br>
+        <input type="radio" id="SiCarnet" name="carnetVacunas" value="si" class="form__radio">
+        <label for="SiCarnet" class="form__label">Si</label>
+        <br>
+        <input type="radio" id="NoCarnet" name="carnetVacunas" value="no" class="form__radio">
+        <label for="NoCarnet" class="form__label">No</label>
+        </div>
 
-        <label for="edad">Edad de la mascota:</label>
-        <input type="number" id="edad" name="edad">
-        <br>
-        <br>
-
-        <label for="Alergico">Es Alergico a Algun Medicamento?</label>
-        <br>
-        <input type="radio" id="SiVacunas" name="Alergico" value="si">
-        <label for="SiVacunas">Si</label>
-        <br>
-        <input type="radio" id="NoVacunas" name="Alergico" value="no">
-        <label for="NoVacunas">No</label>
-        <br>
         <br>
 
-        <label for="sobreMedicamento">Cuentanos cual Medicamento:</label>
+        <div class="form__grupo">
+        <label for="cuidadosEspeciales" class="form__label">Necesita cuidados especiales?</label>
         <br>
-        <textarea id="sobreMedicamento" name="sobreMedicamento" rows="4" cols="30"></textarea>
+        <input type="radio" id="cuidadosSi" name="cuidadosEspeciales" value="si" class="form__radio">
+        <label for="cuidadosSi" class="form__label">Si</label>
         <br>
-        <br>
+        <input type="radio" id="cuidadosNo" name="cuidadosEspeciales" value="no" class="form__radio">
+        <label for="cuidadosNo" class="form__label">No</label>
+        </div>
 
-        <label for="carnetVacunas">Tiene carnet de vacunas?</label>
         <br>
-        <input type="radio" id="SiCarnet" name="carnetVacunas" value="si">
-        <label for="SiCarnet">Si</label>
+        
+        <div class="form__grupo">
+        <label for="cuidadosDescrip" class="form__label">Describe los cuidados especiales:</label>
         <br>
-        <input type="radio" id="NoCarnet" name="carnetVacunas" value="no">
-        <label for="NoCarnet">No</label>
+        <textarea id="cuidadosDescrip" name="cuidadosDescrip" rows="4" cols="42" class="form__textarea"></textarea>
+        </div>
+
         <br>
         <br>
 
-        <label for="cuidadosEspeciales">Necesita cuidados especiales?</label>
-        <br>
-        <input type="radio" id="cuidadosSi" name="cuidadosEspeciales" value="si">
-        <label for="cuidadosSi">Si</label>
-        <br>
-        <input type="radio" id="cuidadosNo" name="cuidadosEspeciales" value="no">
-        <label for="cuidadosNo">No</label>
-        <br>
-        <br>
-
-        <label for="cuidadosDescrip">Describe los cuidados especiales:</label>
-        <br>
-        <textarea id="cuidadosDescrip" name="cuidadosDescrip" rows="4" cols="42"></textarea>
-        <br>
-        <br>
-
-        <label for="tamano">Tamaño de la mascota:</label>
-        <select id="tamano" name="tamano">
+        <div class="form__grupo">
+        <label for="tamano" class="form__label">Tamaño de la mascota:</label>
+        <select id="tamano" name="tamano" class="form__select">
             <option value="pequeno">Pequeño</option>
             <option value="mediano">Mediano</option>
             <option value="grande">Grande</option>
         </select>
+        </div>
+
+        
         <br>
         <br>
 
-        <label for="DiasDisponible">Que dias de la semana necesita ser paseado?</label>
-        <br>
-        <input type="checkbox" id="lunes" name="DiasDisponible" value="lunes">
-        <label for="lunes">Lunes</label>
-        <br>
-        <input type="checkbox" id="martes" name="DiasDisponible" value="martes">
-        <label for="martes">Martes</label>
-        <br>
-        <input type="checkbox" id="miercoles" name="DiasDisponible" value="miercoles">
-        <label for="miercoles">Miercoles</label>
-        <br>
-        <input type="checkbox" id="jueves" name="DiasDisponible" value="jueves">
-        <label for="jueves">Jueves</label>
-        <br>
-        <input type="checkbox" id="viernes" name="DiasDisponible" value="viernes">
-        <label for="viernes">Viernes</label>
-        <br>
-        <input type="checkbox" id="sabado" name="DiasDisponible" value="sabado">
-        <label for="sabado">Sabado</label>
-        <br>
-        <input type="checkbox" id="domingo" name="DiasDisponible" value="domingo">
-        <label for="domingo">Domingo</label>
+        <div class="form__grupo">
+        <label for="DiasDisponible" class="form__label">Que dias de la semana necesita ser paseado?</label>
         <br>
         <br>
 
-        <input type="checkbox" id="terminos" name="terminos">
-        <label for="terminos">Acepto los terminos y condiciones</label>
+        <ul class="form__lista">
+            <li><input type="checkbox" id="lunes" name="DiasDisponible" value="lunes" class="form__checkbox">
+                <label for="lunes" class="form__label">Lunes</label>
+            </li>
+            <li><input type="checkbox" id="martes" name="DiasDisponible" value="martes" class="form__checkbox">
+                <label for="martes" class="form__label">Martes</label>
+            </li>
+            <li><input type="checkbox" id="miercoles" name="DiasDisponible" value="miercoles" class="form__checkbox">
+                <label for="miercoles" class="form__label">Miercoles</label>
+            </li>
+            <li><input type="checkbox" id="jueves" name="DiasDisponible" value="jueves" class="form__checkbox">
+                <label for="jueves" class="form__label">Jueves</label>
+            </li>
+            <li><input type="checkbox" id="viernes" name="DiasDisponible" value="viernes" class="form__checkbox">
+                <label for="viernes" class="form__label">Viernes</label>
+            </li>
+            <li><input type="checkbox" id="sabado" name="DiasDisponible" value="sabado" class="form__checkbox">
+                <label for="sabado" class="form__label">Sabado</label>
+            </li>
+            <li><input type="checkbox" id="domingo" name="DiasDisponible" value="domingo" class="form__checkbox">
+                <label for="domingo" class="form__label">Domingo</label>
+            </li>
+        </ul>
+
         <br>
         <br>
 
-        <input type="submit" name="Enviar y Registrar Mascota" id="Enviar y Registrar Mascota">
+        <div class="form__grupo" form__grupo--terminos>
+        <input type="checkbox" id="terminos" name="terminos" class="form__checkbox">
+        <label for="terminos" class="form__label">Acepto los terminos y condiciones</label>
+        </div>
+
+        <br>
+        <br>
+
+        <input type="submit" name="Enviar y Registrar Mascota" id="Enviar" class="form__submit">
     </form>
+
+    <!-- tabla de muestra -->
+
+    <div class="table__contenedor">
+        <h2 class="table__titulo">Tabla de Mascotas Registradas</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Raza</th>
+                    <th>Edad</th>
+                    <th>Tamaño</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Firulais</td>
+                    <td>Pincher</td>
+                    <td>3 años</td>
+                    <td>Pequeño</td>
+                </tr>
+                <tr>
+                    <td>Princesa</td>
+                    <td>Pitbull</td>
+                    <td>5 años</td>
+                    <td>Mediano</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
 
