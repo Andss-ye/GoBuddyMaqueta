@@ -1,0 +1,15 @@
+body {
+    background-color: #85c980;
+    font-family: Arial;
+    /* poner un recuadro cafe para que se vea el cambio entre el nombre del formulario y el formulario */
+}
+
+.Registro {
+    text-align: center;
+    
+}
+
+.Formulario {
+    text-align: center;
+}
+
