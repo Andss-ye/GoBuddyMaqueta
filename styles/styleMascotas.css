@@ -1,0 +1,149 @@
+body { 
+    background-color: rgb(34, 160, 34); 
+    color: white; 
+    font-family: "Open Sans", Arial, sans-serif; 
+
+} 
+
+.page__titulo { 
+    text-align: center;  
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color: #ffffff; 
+
+} 
+
+.form { 
+    background-color: hsl(0, 0%, 100%); 
+    color: black; 
+    padding: 30px; 
+    margin: 25px auto; 
+    border-radius: 10px; 
+    max-width: 600px;  
+
+} 
+
+.form__grupo {  
+    margin-top: 10px;  
+}
+
+.form__grupo--terminos {
+    margin-top: 20px;
+}
+
+.form__label {
+    margin-right: 50px;
+}
+
+.form__input,
+.form__textarea,
+.form__select {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 15px; 
+    margin-bottom: 10px; 
+    border: 1px solid #7e7e7e; 
+    border-radius: 5px; 
+
+}
+
+.form__radio,
+.form__checkbox {
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    accent-color: #1e8449;
+}
+
+.form__submit {
+    background-color: #007BFF; 
+    color: white;
+    border: none;  
+    padding: 15px 275px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: large;
+
+}
+
+.form__submit:hover {
+    background-color: #145a32;
+}
+
+.form__image {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+
+}
+
+.form__select {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.form__select option {
+    color: black;
+    background-color: white;
+
+}
+
+/* Estilos adicionales para las tablas */
+
+.table__contenedor {
+    margin-top: 50px;
+}
+
+.table__titulo {
+    text-align: center;
+    color: rgb(193, 193, 31);
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+
+}
+
+.form__lista {
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+.form__lista li {
+    margin-bottom: 10px;
+}
